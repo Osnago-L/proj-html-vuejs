@@ -1,8 +1,8 @@
 <template>
   <div class="products container">
       <div class="text">
-        <span>Our Products</span>
-        <h1>All our delectable pastries are backed fresh in our Kitchen very morning, and are made with all-natural, all organic ingredients.</h1>
+        <span class="title-header">Our Products</span>
+        <h1 class="title">All our delectable pastries are backed fresh in our Kitchen very morning, and are made with all-natural, all organic ingredients.</h1>
         <button class="button-purple">Start Shopping</button>
       </div>
       <div class="slideshow">
@@ -36,22 +36,6 @@ export default {
 .text{
   width: 30%;
   margin-right: 60px;
-
-  &>span{
-    font-size: 13px;
-    text-transform: uppercase;
-    color: #929295;
-    font-family: 'Roboto', sans-serif;
-  }
-  &>h1{
-    font-size: 30px;
-    color: $daisy-bush;
-    margin-top: 15px;
-    margin-bottom: 50px;
-    font-family: 'Merriweather', serif;
-
-  }
-
 }
 .slideshow{
     position: relative;
@@ -80,16 +64,14 @@ export default {
     left: 0;
   }
 
-  .img-container{
-        
+  .img-container{     
     width:100%;
     display: flex;
     gap: 15px;
 
     overflow-x: auto;
 
-  img{
-    
+  img{  
     width: 50%;
     object-fit: cover;
     object-position: center;

@@ -1,8 +1,8 @@
 <template>
   <div class="products container">
       <div class="text">
-        <h1>Find a freshly baked product perfect for you</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo similique soluta officiis.</p>
+        <h1 class="title">Find a freshly baked product perfect for you</h1>
+        <p class="subtitle-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo similique soluta officiis.</p>
         <button class="button-purple">Start Shopping</button>
       </div>
       <div class="slideshow">
@@ -39,28 +39,6 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-
-  &>span{
-    font-size: 13px;
-    text-transform: uppercase;
-    color: #929295;
-    font-family: 'Roboto', sans-serif;
-  }
-  &>h1{
-    font-size: 30px;
-    color: $daisy-bush;
-    margin-top: 15px;
-    margin-bottom: 30px;
-    font-family: 'Merriweather', serif;
-
-  }
-    &>p{
-    font-size: 17px;
-    color: #878589;
-    margin-bottom: 30px;
-    font-family: 'Roboto', sans-serif;
-  }
-
 }
 .slideshow{
     position: relative;
@@ -98,7 +76,6 @@ export default {
     overflow-x: auto;
 
   img{
-    
     width: 24%;
     object-fit: cover;
     object-position: center;

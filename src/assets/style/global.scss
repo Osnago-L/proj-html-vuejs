@@ -21,8 +21,15 @@
     width: 90%;
 }
 
+// GRID 
+.grid-span-2{
+    grid-column: span 2;
+}
+
 
 // GLOBAL
+
+// buttons 
 
 .button-purple{
     border: none;
@@ -43,4 +50,26 @@
     font-family: 'Roboto', sans-serif;
     color: $daisy-bush;
     cursor: pointer;
+}
+
+// title header
+.title-header{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #929295;
+    font-family: 'Roboto', sans-serif;
+}
+// title 
+.title{
+    font-size: 30px;
+    color: $daisy-bush;
+    margin: 20px 0;
+    font-family: 'Merriweather', serif;
+}
+// subtitles paragh
+.subtitle-p{
+    font-size: 17px;
+    color: #878589;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
 }

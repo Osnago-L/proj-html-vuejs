@@ -3,10 +3,10 @@
     <Nav/>
     <div class=" jumbo container">
       <div class="jumbo-text">
-        <span>Fresh & Tasty Bakery Every Day</span>
-        <h1>The Perfect Fresh Bread</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo similique soluta officiis.</p>
-        <button>Explore our products</button>
+        <span class="title-header">Fresh & Tasty Bakery Every Day</span>
+        <h1 class="title">The Perfect Fresh Bread</h1>
+        <p class="subtitle-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo similique soluta officiis.</p>
+        <button class="button-white">Explore our products</button>
       </div>
     </div>
   </div>
@@ -45,34 +45,9 @@ export default {
   .jumbo-text{
   width: 500px;
 
-  &>span{
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #929295;
-    font-family: 'Roboto', sans-serif;
-  }
-  &>h1{
+    & .title{
+    // global overwrite
     font-size: 50px;
-    color: $daisy-bush;
-    margin: 20px 0;
-    font-family: 'Merriweather', serif;
-
-  }
-  &>p{
-    font-size: 17px;
-    color: #878589;
-    margin-bottom: 30px;
-    font-family: 'Roboto', sans-serif;
-  }
-  &>button{
-    border: none;
-    border-radius: 6px 6px;
-    background-color: white;
-    padding: 10px 30px;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    color: $daisy-bush;
-    cursor: pointer;
   }
   }
 }

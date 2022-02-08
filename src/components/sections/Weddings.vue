@@ -1,7 +1,7 @@
 <template>
   <div class="weddings container">
-      <span>Corporate & Weddings</span>
-      <h1>Baking Special Moment</h1>
+      <span class="title-header">Corporate & Weddings</span>
+      <h1 class="title">Baking Special Moment</h1>
       <div class="wedding-images">
           <div><img src="..\..\assets\img\corporate-bg.jpg" alt=""></div>
           <div><img src="..\..\assets\img\wedding-bg.jpg" alt=""></div>  
@@ -20,21 +20,6 @@ export default {
 .weddings{
     padding-top: 120px;
     text-align: center;
-
-    &>span{
-    font-size: 13px;
-    text-transform: uppercase;
-    color: #929295;
-    font-family: 'Roboto', sans-serif;
-    }
-
-    &>h1{
-    font-size: 30px;
-    color: $daisy-bush;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    font-family: 'Merriweather', serif;
-    }
     
     .wedding-images{
         display: flex;
@@ -50,6 +35,4 @@ export default {
         }
     }
 }
-
-
 </style>
