@@ -7,11 +7,16 @@
       </div>
       <div class="slideshow">
         <div class="arrow-left">&#8592;</div>
-          <div class="img-container">      
-              <img src="..\..\assets\img\choco-chip-cookies-600x765.jpg" alt="">
-              <img src="..\..\assets\img\strawberry-jam-cookies-600x765.jpg" alt="">
-              <img src="..\..\assets\img\strawberry-donut-600x765.jpg" alt="">
-              <img src="..\..\assets\img\strawberry-donut-600x765.jpg" alt="">        
+          <div class="img-container">     
+            <div>
+                <img src="..\..\assets\img\choco-chip-cookies-500x638.jpg" alt="">
+                <span>Prezzo</span>
+                <span>Prezzo</span>
+            </div>
+            <div><img src="..\..\assets\img\strawberry-jam-cookies-600x765.jpg" alt=""></div>
+            <div><img src="..\..\assets\img\strawberry-donut-600x765.jpg" alt=""></div>
+            <div><img src="..\..\assets\img\strawberry-donut-600x765.jpg" alt=""></div>
+            <div><img src="..\..\assets\img\strawberry-donut-600x765.jpg" alt=""></div>       
           </div>
         <div class="arrow-right">&#8594;</div>
       </div>
@@ -43,12 +48,10 @@ export default {
 .slideshow{
     position: relative;
     width: 60%;
-    display: flex;
-    justify-content: end;
 
   .arrow-left,.arrow-right{
     position: absolute;
-    top: 45%;
+    top: 40%;
     height: 80px;
     width: 40px;
     background-color: $daisy-bush;
@@ -68,19 +71,27 @@ export default {
   }
 
   .img-container{
-        
     width:100%;
     display: flex;
     gap: 15px;
 
-    overflow-x: auto;
+    overflow: auto;
+
+    &>div{
+      width: 24%;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 0 0 auto;
+    }
 
   img{
-    width: 24%;
+    width: 100%;
     object-fit: cover;
     object-position: center;
   }
-}
+  }
 
 }
 </style>

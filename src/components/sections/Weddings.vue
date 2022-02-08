@@ -22,6 +22,7 @@ export default {
     text-align: center;
     
     .wedding-images{
+        padding-top: 40px;
         display: flex;
         gap: 80px;
 

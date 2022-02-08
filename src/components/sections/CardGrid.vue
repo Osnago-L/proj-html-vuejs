@@ -138,6 +138,7 @@ export default {
     .quote{
         padding: 90px 80px;
         background-color: #e9dedc;
+        overflow-y: auto;
 
         & .title{
             font-size: 45px;
