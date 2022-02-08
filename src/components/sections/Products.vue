@@ -2,8 +2,8 @@
   <div class="products container">
       <div class="text">
         <span>Our Products</span>
-        <h1 class="title">All our delectable pastries are backed fresh in our Kitchen very morning, and are made with all-natural, all organic ingredients.</h1>
-        <button>Explore our products</button>
+        <h1>All our delectable pastries are backed fresh in our Kitchen very morning, and are made with all-natural, all organic ingredients.</h1>
+        <button class="button-purple">Start Shopping</button>
       </div>
       <div class="slideshow">
           <div class="img-container">
@@ -23,7 +23,6 @@ export default {
 <style lang="scss" scoped>
 @import "../../assets/style/partial/variables.scss";
 .products{
-    height: 750px;
     padding-top: 140px;
     display: flex;
     justify-content: space-between;
@@ -38,7 +37,7 @@ export default {
     color: #929295;
     font-family: 'Roboto', sans-serif;
   }
-  &>.title{
+  &>h1{
     font-size: 30px;
     color: $daisy-bush;
     margin-top: 15px;
@@ -46,22 +45,12 @@ export default {
     font-family: 'Merriweather', serif;
 
   }
-  &>button{
-    border: none;
-    border-radius: 6px 6px;
-    background-color: $daisy-bush;
-    padding: 10px 30px;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    cursor: pointer;
-  }
+
 }
 .slideshow{
     width: 60%;
     display: flex;
     justify-content: end;
-    border: 1px solid black;
 
     .img-container{
         width:100%;

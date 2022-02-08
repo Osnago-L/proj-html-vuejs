@@ -24,3 +24,23 @@
 
 // GLOBAL
 
+.button-purple{
+    border: none;
+    border-radius: 6px 6px;
+    background-color: $daisy-bush;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+.button-white{
+    border: none;
+    border-radius: 6px 6px;
+    background-color: white;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: $daisy-bush;
+    cursor: pointer;
+}

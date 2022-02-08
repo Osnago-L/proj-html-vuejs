@@ -4,7 +4,7 @@
     <div class=" jumbo container">
       <div class="jumbo-text">
         <span>Fresh & Tasty Bakery Every Day</span>
-        <h1 class="title">The Perfect Fresh Bread</h1>
+        <h1>The Perfect Fresh Bread</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo similique soluta officiis.</p>
         <button>Explore our products</button>
       </div>
@@ -51,7 +51,7 @@ export default {
     color: #929295;
     font-family: 'Roboto', sans-serif;
   }
-  &>.title{
+  &>h1{
     font-size: 50px;
     color: $daisy-bush;
     margin: 20px 0;
