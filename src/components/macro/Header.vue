@@ -31,8 +31,10 @@ export default {
   height: 700px;
   max-height: 700px;
   background-image: url("../../assets/img/hero-header-bakery.jpg");
-  background-repeat: repeat;
+  background-color: #f5e9f3 ;
+  background-repeat: no-repeat;
   background-position: bottom ;
+  background-position-x: 200px;
   background-size: cover;
 }
 .jumbo{
@@ -46,16 +48,19 @@ export default {
   &>span{
     font-size: 14px;
     color: #929295;
+    font-family: 'Roboto', sans-serif;
   }
   &>.title{
     font-size: 50px;
     color: $daisy-bush;
     margin: 10px 0;
+    font-family: 'Merriweather', serif;
+
   }
   &>p{
     font-size: 17px;
-    color: #929295;
-    margin-bottom: 20px;
+    color: #878589;
+    margin-bottom: 20px;font-family: 'Roboto', sans-serif;
   }
   &>button{
     border: none;
@@ -63,6 +68,7 @@ export default {
     background-color: white;
     padding: 10px 30px;
     font-size: 14px;
+    font-family: 'Roboto', sans-serif;
     color: $daisy-bush;
     cursor: pointer;
   }
