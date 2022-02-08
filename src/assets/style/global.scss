@@ -1,12 +1,22 @@
 // VARIABLES IMPORT
 @import "./partial/variables.scss";
 
+// FONTS 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
 // RESET 
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+}
+
+// CONTAINER 
+.container{
+    margin: auto;
+    width: 95%;
 }
 
 // GLOBAL
