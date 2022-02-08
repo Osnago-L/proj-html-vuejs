@@ -1,28 +1,26 @@
 <template>
   <div class="products container">
       <div class="text">
-        <span>Our Products</span>
-        <h1>All our delectable pastries are backed fresh in our Kitchen very morning, and are made with all-natural, all organic ingredients.</h1>
+        <h1>Find a freshly baked product perfect for you</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo similique soluta officiis.</p>
         <button class="button-purple">Start Shopping</button>
       </div>
       <div class="slideshow">
         <div class="arrow-left">&#8592;</div>
-          <div class="img-container">
-              
+          <div class="img-container">      
               <img src="..\..\assets\img\choco-chip-cookies-600x765.jpg" alt="">
               <img src="..\..\assets\img\strawberry-jam-cookies-600x765.jpg" alt="">
               <img src="..\..\assets\img\strawberry-donut-600x765.jpg" alt="">
-              
+              <img src="..\..\assets\img\strawberry-donut-600x765.jpg" alt="">        
           </div>
         <div class="arrow-right">&#8594;</div>
       </div>
-      
   </div>
 </template>
 
 <script>
 export default {
-    name: "Products",
+    name: "ProductsPrices",
 }
 </script>
 
@@ -36,6 +34,11 @@ export default {
 .text{
   width: 30%;
   margin-right: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
   &>span{
     font-size: 13px;
@@ -47,9 +50,15 @@ export default {
     font-size: 30px;
     color: $daisy-bush;
     margin-top: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-family: 'Merriweather', serif;
 
+  }
+    &>p{
+    font-size: 17px;
+    color: #878589;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
   }
 
 }
@@ -90,7 +99,7 @@ export default {
 
   img{
     
-    width: 50%;
+    width: 24%;
     object-fit: cover;
     object-position: center;
   }
