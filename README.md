@@ -1,3 +1,3 @@
-# proj-html-vuejs
+# Bakery Website
 
 Front end project on Bakery.
