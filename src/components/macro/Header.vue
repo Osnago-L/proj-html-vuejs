@@ -47,20 +47,22 @@ export default {
 
   &>span{
     font-size: 14px;
+    text-transform: uppercase;
     color: #929295;
     font-family: 'Roboto', sans-serif;
   }
   &>.title{
     font-size: 50px;
     color: $daisy-bush;
-    margin: 10px 0;
+    margin: 20px 0;
     font-family: 'Merriweather', serif;
 
   }
   &>p{
     font-size: 17px;
     color: #878589;
-    margin-bottom: 20px;font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
   }
   &>button{
     border: none;

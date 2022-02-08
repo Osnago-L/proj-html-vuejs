@@ -41,6 +41,7 @@ export default {
       text-transform: uppercase;
       font-weight: 500;
       font-size: 12px;
+      font-family: 'Roboto', sans-serif;
       color: $daisy-bush;
       opacity: 0.8;
 
@@ -51,7 +52,7 @@ export default {
       }
     }
     .cart{
-      width: 12px;
+      width: 14px;
       margin: 0 30px;
 
       &:hover{

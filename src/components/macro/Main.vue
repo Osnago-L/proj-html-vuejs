@@ -1,12 +1,16 @@
 <template>
   <div class="main">
-
+    <Products/>
   </div>
 </template>
 
 <script>
+import Products from "../sections/Products.vue";
 export default {
-    name: "Main"
+    name: "Main",
+    components:{
+      Products,
+    }
 }
 </script>
 
