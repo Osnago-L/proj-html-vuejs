@@ -70,7 +70,7 @@ export default {
             grid-template-columns: repeat(2,1fr);
 
             &>*{
-                color: rgba(255, 255, 255, 0.8);
+                color: rgba(255, 255, 255, 0.9);
             }
 
             & .title-card{
