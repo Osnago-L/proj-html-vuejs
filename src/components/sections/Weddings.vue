@@ -3,8 +3,8 @@
       <span>Corporate & Weddings</span>
       <h1>Baking Special Moment</h1>
       <div class="wedding-images">
-          <img src="..\..\assets\img\corporate-bg.jpg" alt="">
-          <img src="..\..\assets\img\wedding-bg.jpg" alt="">
+          <div><img src="..\..\assets\img\corporate-bg.jpg" alt=""></div>
+          <div><img src="..\..\assets\img\wedding-bg.jpg" alt=""></div>  
       </div>
   </div>
 </template>
@@ -38,10 +38,15 @@ export default {
     
     .wedding-images{
         display: flex;
-        gap: 20px;
-        
-        img{
+        gap: 80px;
+
+        &>div{
             width: 50%;
+        }
+
+        img{
+           width: 100%;
+           object-fit: cover;
         }
     }
 }
