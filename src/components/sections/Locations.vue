@@ -50,7 +50,6 @@ export default {
 <style lang="scss" scoped>
 .locations{
     padding-top: 140px;
-    height: 800px;
     text-align: center;
 
     &>div{
