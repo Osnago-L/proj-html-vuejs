@@ -7,11 +7,16 @@
       </div>
       <div class="slideshow">
         <div @click="slidebackward" class="arrow-left">&#8592;</div>
-          <div class="img-container">          
-              <img class="product-image" v-for="element, index in items" :key="index"
-              :src="element.img" alt="">   
-          </div>
         <div @click="slideForward" class="arrow-right">&#8594;</div>
+          <div class="img-container">          
+              <div v-for="element, index in items" :key="index">
+                <img @mouseover="mouseOverProducts"  class="product-image" :src="element.img" alt="">  
+                <div @mouseout="mouseOutProducts" class="products-info display-none">
+                    <h1 class="title">{{element.name}}</h1>
+                    <span class="title-header">{{element.price}}</span>
+                </div>
+              </div>
+          </div>
       </div>
       
   </div>
@@ -34,7 +39,16 @@ export default {
       slidebackward(event){
         let imgWidth =  event.path[1].querySelector(".product-image").width;
         event.path[1].querySelector(".img-container").scrollLeft -= (imgWidth + 15)
-      }
+      },
+      mouseOverProducts(event){
+        console.log(event);
+        event.path[1].querySelector(".products-info").classList.remove("display-none")
+      },
+      mouseOutProducts(event){
+        console.log(event);
+        event.path[1].querySelector(".products-info").classList.add("display-none")
+      },
+
     },
     created(){
       this.items = productsList
@@ -62,6 +76,7 @@ export default {
   .arrow-left,.arrow-right{
     position: absolute;
     top: 45%;
+    z-index: 999;
     height: 80px;
     width: 40px;
     background-color: $daisy-bush;
@@ -84,15 +99,39 @@ export default {
     width:100%;
     display: flex;
     gap: 15px;
-
     overflow-x: auto;
 
-  img{  
-    width: 50%;
-    object-fit: cover;
-    object-position: center;
+    &>div{
+      position: relative;
+      width: 50%;
+      display: flex;
+      flex: 0 0 auto;
+    }
+
+    img{  
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+}
+.products-info{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.164);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1,span{
+    color: white;
+  }
+  span{
+    font-size: 20px;
   }
 }
-
 }
 </style>
