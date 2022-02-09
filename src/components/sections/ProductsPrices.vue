@@ -93,14 +93,14 @@ export default {
 
   .img-container{
     width:100%;
+    height: 100%;
     display: flex;
     gap: 15px;
 
     overflow: auto;
 
     &>div{
-      width: 24%;
-      height: 350px;
+      width: 24.2%;
       display: flex;
       flex-direction: column;
       align-items: center;

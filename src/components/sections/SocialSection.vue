@@ -23,7 +23,7 @@ export default {
 
 <style lang="scss" scoped>
 .social-section{
-    padding-top: 140px;
+    padding-top: 180px;
 
     display: grid;
     grid-template-columns: repeat(4,1fr);

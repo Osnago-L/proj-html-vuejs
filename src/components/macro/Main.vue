@@ -6,6 +6,7 @@
     <CardGrid/>
     <Locations/>
     <SocialSection/>
+    <ShopSection/>
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import ProductsPrices from "../sections/ProductsPrices.vue";
 import CardGrid from "../sections/CardGrid.vue";
 import Locations from "../sections/Locations.vue";
 import SocialSection from "../sections/SocialSection.vue";
+import ShopSection from "../sections/ShopSection.vue";
 
 export default {
     name: "Main",
@@ -25,7 +27,8 @@ export default {
       ProductsPrices,
       CardGrid,
       Locations,
-      SocialSection
+      SocialSection,
+      ShopSection
     }
 }
 </script>
