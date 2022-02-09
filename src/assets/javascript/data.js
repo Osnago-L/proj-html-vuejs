@@ -65,10 +65,12 @@ var productsList= [
 var corporateWedding = [
     {
         img: require("../../assets/img/corporate-bg.jpg"),
+        event:false,
         imgHover: require("../../assets/img/corporate-hover-bg.jpg")
     },
     {
         img: require("../../assets/img/wedding-bg.jpg"),
+        event:false,
         imgHover: require("../../assets/img/wedding-hover-bg.jpg")
     },
 ]
