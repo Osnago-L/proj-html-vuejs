@@ -3,15 +3,35 @@
       <span class="title-header">Corporate & Weddings</span>
       <h1 class="title">Baking Special Moment</h1>
       <div class="wedding-images">
-          <div><img src="..\..\assets\img\corporate-bg.jpg" alt=""></div>
-          <div><img src="..\..\assets\img\wedding-bg.jpg" alt=""></div>  
+            <div @mouseover="hoverImage" v-for="element,index in item" :key="index">
+                <img :src="hoverImage()? element.imgHover : element.img"  alt="">
+                <div>
+                    
+                </div>
+            </div>
+
       </div>
   </div>
 </template>
 
 <script>
+import { corporateWedding } from "../../assets/javascript/data";
 export default {
-    name: "Weddings"
+    name: "Weddings",
+    data(){
+        return{
+            items:"",
+            hoveritem:""
+        }
+    },
+    methods:{
+        hoverImage(){
+            return true;
+        }
+    },
+    created(){
+        this.item = corporateWedding
+    }
 }
 </script>
 

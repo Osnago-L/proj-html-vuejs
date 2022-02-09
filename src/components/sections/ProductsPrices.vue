@@ -6,22 +6,42 @@
         <button class="button-purple">Start Shopping</button>
       </div>
       <div class="slideshow">
-        <div class="arrow-left">&#8592;</div>
+        <div @click="slidebackward" class="arrow-left">&#8592;</div>
+        <div @click="slideForward" class="arrow-right">&#8594;</div>
           <div class="img-container">     
-            <div>
-                <img src="..\..\assets\img\choco-chip-cookies-600x765.jpg" alt="">
-                <span class="name">Prezzo</span>
-                <span class="price">Prezzo</span>
+            <div v-for="element,index in items" :key="index">
+                <img class="product-image" :src="element.img" alt="">
+                <span class="name">{{element.name}}</span>
+                <span class="price">{{element.price}}</span>
             </div>
           </div>
-        <div class="arrow-right">&#8594;</div>
+
       </div>
   </div>
 </template>
 
 <script>
+import {productsList} from "../../assets/javascript/data";
 export default {
     name: "ProductsPrices",
+    data(){
+      return{
+        items:[]
+      }
+    },
+    methods:{
+      slideForward(event){
+        let imgWidth =  event.path[1].querySelector(".product-image").width;
+        event.path[1].querySelector(".img-container").scrollLeft += (imgWidth + 15)
+      },
+      slidebackward(event){
+        let imgWidth =  event.path[1].querySelector(".product-image").width;
+        event.path[1].querySelector(".img-container").scrollLeft -= (imgWidth + 15)
+      },
+    },
+    created(){
+      this.items = productsList
+    }
 }
 </script>
 
@@ -48,6 +68,7 @@ export default {
   .arrow-left,.arrow-right{
     position: absolute;
     top: 40%;
+    z-index: 999;
     height: 80px;
     width: 40px;
     background-color: $daisy-bush;
@@ -67,6 +88,7 @@ export default {
   }
 
   .img-container{
+    position: relative;
     width:100%;
     height: 100%;
     display: flex;
@@ -87,8 +109,9 @@ export default {
         object-position: center;
       }
       .name{
+        margin: 8px 0;
         color: $daisy-bush;
-        font-size: 18px;
+        font-size: 16px;
         font-family: 'Merriweather', serif;
         font-weight: 900;
       }

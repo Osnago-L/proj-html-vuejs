@@ -62,6 +62,17 @@ var productsList= [
     },
 ]
 
+var corporateWedding = [
+    {
+        img: require("../../assets/img/corporate-bg.jpg"),
+        imgHover: require("../../assets/img/corporate-hover-bg.jpg")
+    },
+    {
+        img: require("../../assets/img/wedding-bg.jpg"),
+        imgHover: require("../../assets/img/wedding-hover-bg.jpg")
+    },
+]
+
 var navItems=[
 {
     name: "Home",
@@ -98,8 +109,7 @@ var navItems=[
 ]
 
 var footerItems=[
-
 ]
 
-export {productsList,navItems,footerItems};
+export {productsList,corporateWedding,navItems,footerItems};
 

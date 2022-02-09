@@ -11,8 +11,9 @@
           <div class="img-container">          
               <div v-for="element, index in items" :key="index">
                 <img @mouseover="mouseOverProducts"  class="product-image" :src="element.img" alt="">  
-                <div @mouseout="mouseOutProducts" class="products-info display-none">
+                <div @mouseleave="mouseOutProducts" class="products-info display-none">
                     <h1 class="title">{{element.name}}</h1>
+                    <span class="subtitle-p">{{element.category.join(", ")}}</span>
                     <span class="title-header">{{element.price}}</span>
                 </div>
               </div>
@@ -33,6 +34,7 @@ export default {
     },
     methods:{
       slideForward(event){
+        console.log(event);
         let imgWidth =  event.path[1].querySelector(".product-image").width;
         event.path[1].querySelector(".img-container").scrollLeft += (imgWidth + 15)
       },
@@ -41,11 +43,9 @@ export default {
         event.path[1].querySelector(".img-container").scrollLeft -= (imgWidth + 15)
       },
       mouseOverProducts(event){
-        console.log(event);
         event.path[1].querySelector(".products-info").classList.remove("display-none")
       },
       mouseOutProducts(event){
-        console.log(event);
         event.path[1].querySelector(".products-info").classList.add("display-none")
       },
 
@@ -129,8 +129,11 @@ export default {
   h1,span{
     color: white;
   }
-  span{
+  span.title-header{
     font-size: 20px;
+  }
+  span.subtitle-p{
+    font-size: 14px;
   }
 }
 }
