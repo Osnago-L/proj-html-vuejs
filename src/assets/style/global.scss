@@ -20,6 +20,10 @@
     margin: auto;
     width: 90%;
 }
+.container-footer{
+    margin: auto;
+    width: 94%;
+}
 
 // GRID 
 .grid-span-2{
@@ -42,6 +46,11 @@
     color: white;
     cursor: pointer;
 }
+.button-purple:hover{
+    background-color: #92929527;
+    color: $daisy-bush;
+}
+
 .button-white{
     max-width: 200px;
     border: none;
@@ -52,6 +61,10 @@
     font-family: 'Roboto', sans-serif;
     color: $daisy-bush;
     cursor: pointer;
+}
+.button-white:hover{
+    background-color: $daisy-bush;
+    color: white;
 }
 
 // title header

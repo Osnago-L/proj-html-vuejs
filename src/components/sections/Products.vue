@@ -7,12 +7,9 @@
       </div>
       <div class="slideshow">
         <div class="arrow-left">&#8592;</div>
-          <div class="img-container">
-              
-              <img src="..\..\assets\img\choco-chip-cookies-600x765.jpg" alt="">
-              <img src="..\..\assets\img\strawberry-jam-cookies-600x765.jpg" alt="">
-              <img src="..\..\assets\img\strawberry-donut-600x765.jpg" alt="">
-              
+          <div class="img-container">          
+              <img v-for="element, index in items" :key="index"
+              :src="element.img" alt="">   
           </div>
         <div class="arrow-right">&#8594;</div>
       </div>
@@ -21,8 +18,18 @@
 </template>
 
 <script>
+import {productsList} from "../../assets/javascript/data";
 export default {
     name: "Products",
+    data(){
+      return{
+        items:[]
+      }
+    },
+    created(){
+      this.items = productsList
+      console.log(this.items);
+    }
 }
 </script>
 

@@ -9,32 +9,7 @@
         <div class="arrow-left">&#8592;</div>
           <div class="img-container">     
             <div>
-                <img src="..\..\assets\img\choco-chip-cookies-500x638.jpg" alt="">
-                <span class="name">Prezzo</span>
-                <span class="price">Prezzo</span>
-            </div>
-            <div>
-                <img src="..\..\assets\img\strawberry-jam-cookies-600x765.jpg" alt="">
-                <span class="name">Prezzo</span>
-                <span class="price">Prezzo</span>
-            </div>
-            <div>
-                <img src="..\..\assets\img\strawberry-donut-600x765.jpg" alt="">
-                <span class="name">Prezzo</span>
-                <span class="price">Prezzo</span>
-            </div>
-            <div>
-                <img src="..\..\assets\img\strawberry-donut-600x765.jpg" alt="">
-                <span class="name">Prezzo</span>
-                <span class="price">Prezzo</span>
-            </div>
-            <div>
-                <img src="..\..\assets\img\strawberry-donut-600x765.jpg" alt="">
-                <span class="name">Prezzo</span>
-                <span class="price">Prezzo</span>
-            </div>
-            <div>
-                <img src="..\..\assets\img\strawberry-donut-600x765.jpg" alt="">
+                <img src="..\..\assets\img\choco-chip-cookies-600x765.jpg" alt="">
                 <span class="name">Prezzo</span>
                 <span class="price">Prezzo</span>
             </div>

@@ -2,8 +2,8 @@
   <div class="nav-header container">
     <img class="logo" src="../../assets/img/avada-bakery-logo-retina-200x97.png" alt="">
     <nav>
-        <span v-for="element,index in 8" :key="index"
-        >test</span>
+        <span v-for="element,index in items" :key="index"
+        >{{element.name}}</span>
 
         <img class="cart" src="../../assets/img/cart-shopping-solid.svg" alt="">
     </nav>
@@ -11,13 +11,17 @@
 </template>
 
 <script>
+import {navItems} from "../../assets/javascript/data";
 export default {
-    name: "Nav",
-    data(){
-      return{
-
-      }
+  name: "Nav",
+  data(){
+    return{
+      items:[]
     }
+  },
+  created(){
+    this.items = navItems
+  }
 }
 </script>
 
@@ -39,7 +43,7 @@ export default {
       margin: 0 30px;
       padding-bottom: 8px;
       text-transform: uppercase;
-      font-weight: 500;
+      font-weight: 700;
       font-size: 12px;
       font-family: 'Roboto', sans-serif;
       color: $daisy-bush;
