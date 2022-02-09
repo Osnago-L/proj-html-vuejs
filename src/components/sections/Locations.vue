@@ -25,7 +25,15 @@
             <div class="location-info">
                 <h1 class="title">London</h1>
                 <div>
-
+                    <div>
+                        <span class="title-header">Call Us</span>
+                        <span class="subtitle-p">1.800.455.556</span>
+                    </div>
+                    <div>
+                        <span class="title-header">Open All Week</span>
+                        <span class="subtitle-p">9.00 AM - 6.00PM</span>
+                    </div>
+                    <button class="button-white">View Map</button>
                 </div>
             </div>
         </div>
@@ -68,12 +76,20 @@ export default {
     .location-info{
         &>div{
             display: flex;
+            align-items: flex-start;
             justify-content: space-evenly;
 
             &>div{
+                width: 120px;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-evenly;
+
+            & span:first-child{
+                font-size: 13px;
+            }
+            & span:nth-child(2){
+                font-size: 13px;
+            }
             }
         }
     }
