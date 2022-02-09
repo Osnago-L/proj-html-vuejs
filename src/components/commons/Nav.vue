@@ -5,7 +5,7 @@
         <span v-for="element,index in items" :key="index"
         >{{element.name}}</span>
 
-        <img class="cart" src="../../assets/img/cart-shopping-solid.svg" alt="">
+        <i class="fa-solid fa-cart-shopping"></i>
     </nav>
   </div>
 </template>
@@ -38,6 +38,14 @@ export default {
   width: 150px;
   }
   nav{
+    i{
+        font-size: 14px;
+        margin: 0 30px;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
     
     span{
       margin: 0 30px;
@@ -55,15 +63,7 @@ export default {
         cursor: pointer;
       }
     }
-    .cart{
-      width: 14px;
-      margin: 0 30px;
-
-      &:hover{
-        cursor: pointer;
-      }
     }
-  }
 }
 
 </style>

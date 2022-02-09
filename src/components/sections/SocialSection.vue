@@ -4,7 +4,7 @@
       <div class="social-card grid-span-2">
           <span class="title-header">made for sharing</span>
           <h1 class="title">Let's stay in touch</h1>
-          <button class="button-purple">Follow Us</button>
+          <button class="button-purple"><i class="fa-brands fa-instagram"></i> Follow Us</button>
       </div>
       <div><img src="../../assets/img/social-2.jpg" alt=""></div>
       <div><img src="../../assets/img/social-3.jpg" alt=""></div>
@@ -44,5 +44,6 @@ export default {
         object-fit: cover;
         object-position: center;
     }
+
 }
 </style>
