@@ -10,13 +10,34 @@
           <div class="img-container">     
             <div>
                 <img src="..\..\assets\img\choco-chip-cookies-500x638.jpg" alt="">
-                <span>Prezzo</span>
-                <span>Prezzo</span>
+                <span class="name">Prezzo</span>
+                <span class="price">Prezzo</span>
             </div>
-            <div><img src="..\..\assets\img\strawberry-jam-cookies-600x765.jpg" alt=""></div>
-            <div><img src="..\..\assets\img\strawberry-donut-600x765.jpg" alt=""></div>
-            <div><img src="..\..\assets\img\strawberry-donut-600x765.jpg" alt=""></div>
-            <div><img src="..\..\assets\img\strawberry-donut-600x765.jpg" alt=""></div>       
+            <div>
+                <img src="..\..\assets\img\strawberry-jam-cookies-600x765.jpg" alt="">
+                <span class="name">Prezzo</span>
+                <span class="price">Prezzo</span>
+            </div>
+            <div>
+                <img src="..\..\assets\img\strawberry-donut-600x765.jpg" alt="">
+                <span class="name">Prezzo</span>
+                <span class="price">Prezzo</span>
+            </div>
+            <div>
+                <img src="..\..\assets\img\strawberry-donut-600x765.jpg" alt="">
+                <span class="name">Prezzo</span>
+                <span class="price">Prezzo</span>
+            </div>
+            <div>
+                <img src="..\..\assets\img\strawberry-donut-600x765.jpg" alt="">
+                <span class="name">Prezzo</span>
+                <span class="price">Prezzo</span>
+            </div>
+            <div>
+                <img src="..\..\assets\img\strawberry-donut-600x765.jpg" alt="">
+                <span class="name">Prezzo</span>
+                <span class="price">Prezzo</span>
+            </div>
           </div>
         <div class="arrow-right">&#8594;</div>
       </div>
@@ -84,14 +105,24 @@ export default {
       flex-direction: column;
       align-items: center;
       flex: 0 0 auto;
+
+      img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .name{
+        color: $daisy-bush;
+        font-size: 18px;
+        font-family: 'Merriweather', serif;
+        font-weight: 900;
+      }
+      .price{
+        font-size: 14px;
+        color: #929295;
+        font-family: 'Roboto', sans-serif;
+      }
     }
-
-  img{
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
   }
-  }
-
 }
 </style>
