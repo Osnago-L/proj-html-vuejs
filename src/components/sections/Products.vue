@@ -6,12 +6,12 @@
         <button class="button-purple">Start Shopping</button>
       </div>
       <div class="slideshow">
-        <div class="arrow-left">&#8592;</div>
+        <div @click="slidebackward" class="arrow-left">&#8592;</div>
           <div class="img-container">          
-              <img v-for="element, index in items" :key="index"
+              <img class="product-image" v-for="element, index in items" :key="index"
               :src="element.img" alt="">   
           </div>
-        <div class="arrow-right">&#8594;</div>
+        <div @click="slideForward" class="arrow-right">&#8594;</div>
       </div>
       
   </div>
@@ -26,9 +26,18 @@ export default {
         items:[]
       }
     },
+    methods:{
+      slideForward(event){
+        let imgWidth =  event.path[1].querySelector(".product-image").width;
+        event.path[1].querySelector(".img-container").scrollLeft += (imgWidth + 15)
+      },
+      slidebackward(event){
+        let imgWidth =  event.path[1].querySelector(".product-image").width;
+        event.path[1].querySelector(".img-container").scrollLeft -= (imgWidth + 15)
+      }
+    },
     created(){
       this.items = productsList
-      console.log(this.items);
     }
 }
 </script>
