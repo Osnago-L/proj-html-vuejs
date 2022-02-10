@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Nav from "../commons/Nav.vue";
+import Nav from "../sections/Nav.vue";
 
 export default {
     name: "Header",

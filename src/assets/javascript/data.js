@@ -110,8 +110,5 @@ var navItems=[
 },
 ]
 
-var footerItems=[
-]
-
-export {productsList,corporateWedding,navItems,footerItems};
+export {productsList,corporateWedding,navItems};
 
