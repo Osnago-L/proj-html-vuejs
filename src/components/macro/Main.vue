@@ -1,5 +1,6 @@
 <template>
   <div class="main">
+    <FixedCart/>
     <Products/>
     <Weddings/>
     <ProductsPrices/>
@@ -11,6 +12,7 @@
 </template>
 
 <script>
+import FixedCart from "../commons/FixedCart.vue";
 import Products from "../sections/Products.vue";
 import Weddings from "../sections/Weddings.vue";
 import ProductsPrices from "../sections/ProductsPrices.vue";
@@ -22,6 +24,7 @@ import ShopSection from "../sections/ShopSection.vue";
 export default {
     name: "Main",
     components:{
+      FixedCart,
       Products,
       Weddings,
       ProductsPrices,
