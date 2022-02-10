@@ -23,6 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/style/partial/variables.scss";
 .social-section {
   padding-top: 180px;
 
@@ -32,7 +33,7 @@ export default {
   gap: 40px;
 
   .social-card {
-    background-color: #e9dedc85;
+    background-color: rgba($pearl-bush, 0.4);
     display: flex;
     flex-direction: column;
     align-items: center;

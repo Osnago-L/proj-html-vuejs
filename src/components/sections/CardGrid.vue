@@ -64,6 +64,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/style/partial/variables.scss";
 .test {
   justify-self: end;
 }
@@ -83,37 +84,37 @@ export default {
       padding: 60px;
       height: 100%;
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.37);
+      background-color: rgba(black, 0.37);
 
       display: grid;
       grid-template-columns: repeat(2, 1fr);
 
       & > * {
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(white, 0.9);
       }
 
       & .title-card {
         font-size: 55px;
-        font-family: "Merriweather", serif;
+        font-family: $merriweather;
         grid-area: h1;
       }
       & .id-card {
         font-size: 80px;
-        font-family: "Roboto", sans-serif;
+        font-family: $roboto;
         font-weight: 100;
         justify-self: end;
         grid-area: span;
       }
       & .title-header-card {
         font-size: 13px;
-        font-family: "Roboto", sans-serif;
+        font-family: $roboto;
         color: #c5c5c7;
         text-transform: uppercase;
       }
       & .subtitle-card {
         margin-top: 15px;
         font-size: 18px;
-        font-family: "Roboto", sans-serif;
+        font-family: $roboto;
         line-height: 28px;
       }
       .text-section {
@@ -155,7 +156,7 @@ export default {
   }
   .quote {
     padding: 90px 80px;
-    background-color: #e9dedc85;
+    background-color: rgba($pearl-bush, 0.4);
     overflow-y: auto;
 
     & .title {
@@ -165,8 +166,8 @@ export default {
 
     & .author {
       font-size: 13px;
-      color: #878589;
-      font-family: "Roboto", sans-serif;
+      color: $mamba;
+      font-family: $roboto;
     }
   }
 }

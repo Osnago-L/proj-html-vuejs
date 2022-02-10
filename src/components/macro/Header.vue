@@ -49,7 +49,6 @@ export default {
     width: 500px;
 
     & .title {
-      // global overwrite
       font-size: 50px;
     }
   }

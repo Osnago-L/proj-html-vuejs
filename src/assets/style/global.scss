@@ -55,7 +55,7 @@
     background-color: $daisy-bush;
     padding: 10px 30px;
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
     color: white;
     cursor: pointer;
 }
@@ -71,7 +71,7 @@
     background-color: white;
     padding: 10px 30px;
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
     color: $daisy-bush;
     cursor: pointer;
 }
@@ -84,8 +84,8 @@
 .title-header{
     font-size: 14px;
     text-transform: uppercase;
-    color: #929295;
-    font-family: 'Roboto', sans-serif;
+    color: $manatee;
+    font-family: $roboto;
 }
 // title 
 .title{
@@ -93,12 +93,12 @@
     font-weight: 900;
     color: $daisy-bush;
     margin: 20px 0;
-    font-family: 'Merriweather', serif;
+    font-family: $merriweather
 }
 // subtitles paragh
 .subtitle-p{
     font-size: 17px;
-    color: #878589;
+    color: $mamba;
     margin-bottom: 30px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
 }

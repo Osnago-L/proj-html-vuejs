@@ -17,6 +17,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/style/partial/variables.scss";
 .fixed-cart {
   position: fixed;
   top: 120px;
@@ -24,8 +25,8 @@ export default {
   z-index: 999;
 
   & > div {
-    background-color: #e9dedc31;
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+    background-color: rgba(white, 0.9);
+    box-shadow: 1px 1px 8px rgba(black, 0.4);
     width: 60px;
     height: 60px;
     border-radius: 8px 8px;
@@ -41,6 +42,7 @@ export default {
 
     svg {
       font-size: 35px;
+      color: $daisy-bush;
     }
     span {
       position: absolute;
@@ -56,12 +58,13 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba($daisy-bush, 0.9);
     cursor: pointer;
 
     span {
       font-size: 20px;
-      color: #65bc7b;
-      font-family: "Roboto", sans-serif;
+      color:white;
+      font-family: $roboto;
       font-weight: 700;
     }
   }

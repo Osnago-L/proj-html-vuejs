@@ -34,7 +34,7 @@ nav {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 12px;
-    font-family: "Roboto", sans-serif;
+    font-family: $roboto;
     color: $daisy-bush;
     opacity: 0.8;
 

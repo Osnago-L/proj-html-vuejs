@@ -65,13 +65,13 @@ export default {
         font-size: 23px;
       }
       input {
-        border: 1px solid rgba(0, 0, 0, 0.315);
+        border: 1px solid rgba(black, 0.2);
         border-radius: 6px 6px;
         margin-right: 15px;
         padding: 0 10px;
         width: 400px;
         height: 37px;
-        font-family: "Roboto", sans-serif;
+        font-family: $roboto;
       }
     }
   }

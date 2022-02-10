@@ -48,6 +48,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/style/partial/variables.scss";
 .locations {
   padding-top: 140px;
   text-align: center;
@@ -56,10 +57,10 @@ export default {
     display: flex;
   }
   .newyork {
-    background-color: #0a5d6c1c;
+    background-color: rgba($atoll, 0.1);
   }
   .london {
-    background-color: #f0caa127;
+    background-color: rgba($chalky, 0.1);
   }
 
   .newyork,

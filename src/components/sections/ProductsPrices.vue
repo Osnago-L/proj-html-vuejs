@@ -70,7 +70,7 @@ export default {
   .arrow-left,
   .arrow-right {
     position: absolute;
-    top: 40%;
+    top: 35%;
     z-index: 999;
     height: 80px;
     width: 40px;
@@ -115,13 +115,13 @@ export default {
         margin: 8px 0;
         color: $daisy-bush;
         font-size: 16px;
-        font-family: "Merriweather", serif;
+        font-family: $merriweather;
         font-weight: 900;
       }
       .price {
         font-size: 14px;
-        color: #929295;
-        font-family: "Roboto", sans-serif;
+        color: $manatee;
+        font-family: $roboto;
       }
     }
   }
