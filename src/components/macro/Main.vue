@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <FixedCart/>
+    <FixedCart v-if="false"/>
     <Products/>
     <Weddings/>
     <ProductsPrices/>
